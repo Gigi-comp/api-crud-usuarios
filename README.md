@@ -3,7 +3,7 @@ API REST backend de gerenciamento de usuários com Node.js, TypeScript, TypeORM 
 
 # 📋 API REST — CRUD de Usuários
 API REST backend para gerenciamento de usuários desenvolvida com Node.js, TypeScript, Express, TypeORM, Zod e SQLite.
-Projeto acadêmico desenvolvido para a disciplina de Sistemas para Internet.
+Projeto acadêmico desenvolvido para a disciplina de frameworks backend (node.js e nest.js)
 **Autora:** Gislaine Rodrigues
 
 -----------------------------------------------------------------
