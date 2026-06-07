@@ -1,0 +1,37 @@
+{
+  "name": "trabalho2bimestretypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+     "dev": "node --loader ts-node/esm --watch src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js",
+  "migration:generate": "typeorm-ts-node-esm migration:generate src/migrations/CreateUserTable -d src/database/db.ts",
+"migration:run": "typeorm-ts-node-esm migration:run -d src/database/db.ts",
+"migration:revert": "typeorm-ts-node-esm migration:revert -d src/database/db.ts",
+"seed": "node --loader ts-node/esm src/database/userSeed.ts"  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.30",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.3",
+    "typescript": "^5.7.3"
+  },
+  "type": "module"
+
+}
