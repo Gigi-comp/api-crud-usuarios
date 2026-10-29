@@ -1,0 +1,12 @@
+services:
+  apigateway:
+      build:
+        context: .                  
+        dockerfile: ./src/Dockerfile 
+      container_name: apiGateway
+      volumes:
+        - ./src:/var/www/html
+        - /var/www/html/node_modules
+      ports:
+        - "3001:3001"
+      restart: always
